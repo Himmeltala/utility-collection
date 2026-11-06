@@ -1,6 +1,6 @@
 {
-  "name": "common-tools",
-  "productName": "CommonTools",
+  "name": "utility-collection",
+  "productName": "UtilityCollection",
   "version": "1.0.0",
   "private": true,
   "type": "module",

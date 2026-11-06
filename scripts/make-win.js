@@ -20,7 +20,7 @@ const BINARIES_MIRROR =
 const REQUIRED_BUILD_OUTPUT = ['dist/index.html', 'dist-electron/main.js', 'dist-electron/preload.js']
 
 // ${version} 由 electron-builder 替换成 package.json 里的版本号
-const ARTIFACT_NAME = 'CommonTools-${version}-setup.exe'
+const ARTIFACT_NAME = 'utility-collection-${version}-setup.exe'
 
 /**
  * 执行子命令，失败即中断

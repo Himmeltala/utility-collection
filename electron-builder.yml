@@ -4,9 +4,9 @@
 # 安装范围固定为所有用户，用户改不了；安装目录仍由目录选择页决定。
 # 安装包文件名由 scripts/make-win.js 用 -c.nsis.artifactName 传入。
 
-appId: com.zhengrenfu.commontools
-# productName 同时决定 exe 名与 app.getPath('userData')，也就是 %APPDATA%\CommonTools，保持英文
-productName: CommonTools
+appId: com.himmeltala.utilitycollection
+# productName 同时决定 exe 名与 app.getPath('userData')，也就是 %APPDATA%\UtilityCollection，保持英文
+productName: UtilityCollection
 
 directories:
   # 默认值是 dist，与 vite 的渲染进程产物目录同名。留默认值会让 electron-builder 把 dist 当成输出目录

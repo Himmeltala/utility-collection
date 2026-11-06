@@ -242,7 +242,7 @@ if (!gotLock) {
 }
 
 // Windows 通知要求设置 AppUserModelId，须与 electron-builder.yml 的 appId 一致
-app.setAppUserModelId('com.zhengrenfu.commontools')
+app.setAppUserModelId('com.himmeltala.utilitycollection')
 
 app.whenReady().then(() => {
   initServices()
