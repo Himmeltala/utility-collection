@@ -1,8 +1,8 @@
 /*
  * @Author: zhengrenfu
  * @Date: 2026-08-15
- * @LastEditors: zhengrenfu
- * @LastEditTime: 2026-08-15
+ * @LastEditors: Himmeltala
+ * @LastEditTime: 2026-11-07 00:33:00
  * @FilePath: \electron\services\media\ffmpeg.service.ts
  * @Description: ffmpeg 服务，定位可执行文件、封装 spawn 调用与图片转码，供图片与视频工具复用
  */
@@ -94,7 +94,7 @@ export async function convertImage(
   targetFormat: string,
   quality: number,
 ): Promise<ImageConvertResult> {
-  const tempDir = mkdtempSync(join(tmpdir(), 'common-tools-img-'))
+  const tempDir = mkdtempSync(join(tmpdir(), 'utility-collection-img-'))
   const inputPath = join(tempDir, `input-${randomUUID()}.${inputFormat}`)
   const outputPath = join(tempDir, `output-${randomUUID()}.${targetFormat}`)
 

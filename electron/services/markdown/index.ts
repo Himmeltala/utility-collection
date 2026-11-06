@@ -1,8 +1,8 @@
 /*
  * @Author: zhengrenfu
  * @Date: 2026-08-12
- * @LastEditors: zhengrenfu
- * @LastEditTime: 2026-08-12
+ * @LastEditors: Himmeltala
+ * @LastEditTime: 2026-11-07 00:33:00
  * @FilePath: \electron\services\markdown\index.ts
  * @Description: Markdown 工具类执行器注册
  */
@@ -36,7 +36,7 @@ toolExecutors.register({
       return { success: false, error: '未提供 HTML 内容' }
     }
 
-    const tmpDir = join(tmpdir(), 'common-tools-pdf')
+    const tmpDir = join(tmpdir(), 'utility-collection-pdf')
     mkdirSync(tmpDir, { recursive: true })
     const htmlPath = join(tmpDir, `${fileName}.html`)
     writeFileSync(htmlPath, html, 'utf-8')
